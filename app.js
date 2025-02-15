@@ -13,6 +13,7 @@ app.use(morgan("dev"));
 
 
 // Routes
+app.use("/ping",(req,res)=>res.send('Ping'));
 app.use("/api/users", userRoutes);
 // app.use("/api/medical-report", medicalReport);
 
